@@ -2,10 +2,19 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int num,rev=0;
+    cout << "Enter the Number" << endl;
+    cin >> num;
+
+    while (num > 0) {
+        rev = num % 10;
+        num = num / 10;
+        cout << rev;
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
